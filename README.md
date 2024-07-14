@@ -9,3 +9,11 @@
 </div>
 
 ## Apresentação do aplicativo
+
+### Tecnologias - recursos utilizados nesse aplicativo:
+<ul>
+  <li>Kotlin,</li>
+  <li>Firebase: Firestore / Firebase Auth / Firebase Storage / Firebase Cloud Messeging;</li>
+  <li>MVVM</li>
+  <li>Coroutines and flows.</li>
+</ul>
