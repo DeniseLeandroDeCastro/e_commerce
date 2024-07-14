@@ -1,0 +1,110 @@
+[versions]
+#AGP
+agp = "8.5.1"
+
+#Kotlin
+kotlin = "1.9.23"
+kotlinPlugin="2.0.20-Beta1"
+
+#Core KTX
+coreKtx = "1.13.1"
+
+#Glide
+glide = "4.15.1"
+
+#JUnit
+junit = "4.13.2"
+junitVersion = "1.2.1"
+
+#Espresso
+espressoCore = "3.6.1"
+
+#App Compat
+appcompat = "1.7.0"
+
+#Material
+material = "1.12.0"
+
+#Activity
+activity = "1.9.0"
+
+#Constraint Layout
+constraintlayout = "2.1.4"
+
+#Firebase
+googleGmsGoogleServices = "4.4.2"
+firebaseAuth = "23.0.0"
+
+#Hilt
+hiltAndroid = "2.50"
+
+#KSP
+ksp = "2.0.20-Beta1-1.0.22"
+
+#Circular Image
+circleimageview = "3.1.0"
+
+#Coroutines with Firebase
+kotlinxCoroutinesPlayServices = "1.7.3"
+
+#Lottie Animation
+lottie = "5.2.0"
+
+#Navigation Fragment
+navigationFragmentKtx = "2.7.7"
+
+[libraries]
+#Core KTX
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+
+#Lottie Animation
+lottie = { module = "com.airbnb.android:lottie", version.ref = "lottie" }
+
+#Coroutines
+kotlinx-coroutines-play-services = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-play-services", version.ref = "kotlinxCoroutinesPlayServices" }
+
+#Circle Image
+circleimageview = { module = "de.hdodenhof:circleimageview", version.ref = "circleimageview" }
+
+#Android Navigation Fragment
+androidx-navigation-fragment-ktx = { module = "androidx.navigation:navigation-fragment-ktx", version.ref = "navigationFragmentKtx" }
+
+#Navigation
+androidx-navigation-ui-ktx = { module = "androidx.navigation:navigation-ui-ktx", version.ref = "navigationFragmentKtx" }
+
+#JUnit
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+
+#Espresso
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+firebase-auth = { group = "com.google.firebase", name = "firebase-auth", version.ref = "firebaseAuth" }
+
+#App Compat
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+
+#Material
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+
+#Activity
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+
+#Constraint Layout
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+
+#Hilt
+dagger-hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hiltAndroid" }
+hilt-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "hiltAndroid" }
+
+#Glide
+glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
+compiler = { module = "com.github.bumptech.glide:compiler", version.ref = "glide" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+google-gms-google-services = { id = "com.google.gms.google-services", version.ref = "googleGmsGoogleServices" }
+dagger-hilt-android = { id = "com.google.dagger.hilt.android",  version.ref = "hiltAndroid"}
+kotlin-parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize",  version.ref = "kotlinPlugin"}
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp"}
+

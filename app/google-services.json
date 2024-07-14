@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "450548934425",
+    "project_id": "e-commerce-ed192",
+    "storage_bucket": "e-commerce-ed192.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:450548934425:android:bead3abb4ad6f46079c788",
+        "android_client_info": {
+          "package_name": "com.denise.castro.e_commerce"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYaaIIpK6RtjA9I1zv7rmCxY1ytMfIkDQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
