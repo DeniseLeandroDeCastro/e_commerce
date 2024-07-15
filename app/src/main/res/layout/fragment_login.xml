@@ -144,7 +144,7 @@
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/buttonLoginLogin"
-            android:layout_width="@dimen/mediumButtonWidth"
+            android:layout_width="@dimen/largeButtonWidth"
             android:layout_height="@dimen/smallButtonHeight"
             style="@style/blueButtonStyle"
             app:layout_constraintTop_toBottomOf="@+id/linearLayoutLogin"

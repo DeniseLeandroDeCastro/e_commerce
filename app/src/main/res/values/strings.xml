@@ -1,23 +1,27 @@
 <resources>
     <string name="app_name">E_Commerce</string>
-    <string name="the_right_address">O endereço certo para fazer compras a qualquer hora</string>
+
+    <!--Introduction-->
     <string name="access_wherever">Acesse de onde estiver e na hora que quiser</string>
+    <string name="the_right_address">O endereço certo para fazer compras a qualquer hora</string>
+    <string name="text_btn_start">Iniciar</string>
+
+    <!--Account Options-->
     <string name="quality">Agora ficou muito fácil alcançar a melhor qualidade entre os produtos da internet!</string>
     <string name="you_can_choose">Aqui você pode escolher à vontade</string>
-    <string name="text_btn_start">Iniciar</string>
-    <string name="text_btn_register">Cadastrar</string>
-    <string name="text_btn_login">Login</string>
-    <string name="tv_login_account">Faça login na sua conta</string>
-    <string name="tv_last_name">Último nome</string>
-    <string name="tv_dont_have_account">Ainda não tem uma conta? Cadastre-se.</string>
-    <string name="tv_seu_email">Seu email</string>
-    <string name="edit_text_first_name">Primeiro nome</string>
-    <string name="edit_text_last_name">Último nome</string>
-    <string name="edit_email">E-mail</string>
-    <string name="edit_password">Senha</string>
-    <string name="tv_forgot_password">Esqueceu sua senha?</string>
+
+    <!--Register-->
     <string name="text_create_account">Crie sua conta</string>
-    <string name="tv_first_name">Primeiro nome</string>
-    <string name="tv_password">Sua senha</string>
     <string name="do_you_have_an_account_log_in">Já tem uma conta? Log in</string>
+    <string name="edit_first_name">Primeiro nome</string>
+    <string name="edit_last_name">Último nome</string>
+    <string name="text_btn_register">Cadastrar</string>
+
+    <!--Login-->
+    <string name="edit_password">Senha</string>
+    <string name="edit_email">E-mail</string>
+    <string name="tv_dont_have_account">Ainda não tem uma conta? Cadastre-se.</string>
+    <string name="tv_forgot_password">Esqueceu sua senha?</string>
+    <string name="tv_login_account">Faça login na sua conta</string>
+    <string name="text_btn_login">Login</string>
 </resources>

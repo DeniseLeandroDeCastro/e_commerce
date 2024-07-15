@@ -56,14 +56,16 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/buttonStartIntroduction"
-        android:layout_width="@dimen/mediumButtonWidth"
-        android:layout_height="@dimen/smallButtonHeight"
         style="@style/blueButtonStyle"
-        app:layout_constraintTop_toBottomOf="@+id/tvTheRightAddress"
-        app:layout_constraintStart_toStartOf="@+id/tvTheRightAddress"
-        app:layout_constraintEnd_toEndOf="@+id/tvTheRightAddress"
+        android:layout_width="@dimen/largeButtonWidth"
+        android:layout_height="@dimen/smallButtonHeight"
+        android:text="@string/text_btn_start"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:text="@string/text_btn_start"/>
+        app:layout_constraintEnd_toEndOf="@+id/tvTheRightAddress"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tvTheRightAddress"
+        app:layout_constraintTop_toBottomOf="@+id/tvTheRightAddress"
+        app:layout_constraintVertical_bias="0.505" />
 
     <ImageView
         android:layout_width="wrap_content"

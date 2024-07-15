@@ -43,12 +43,14 @@
 
         <TextView
             android:id="@+id/tvTheRightAddress"
-            style="@style/h4"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_thin"
             android:layout_width="283dp"
             android:layout_height="148dp"
             android:layout_marginTop="4dp"
             android:gravity="center"
-            android:text="@string/access_wherever"
+            android:text="@string/quality"
             android:textAlignment="center"
             app:layout_constraintEnd_toEndOf="@+id/logomarca"
             app:layout_constraintHorizontal_bias="0.506"
@@ -57,7 +59,7 @@
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/buttonRegisterAccountOptions"
-            android:layout_width="@dimen/mediumButtonWidth"
+            android:layout_width="@dimen/largeButtonWidth"
             android:layout_height="@dimen/smallButtonHeight"
             style="@style/blueButtonStyle"
             app:layout_constraintTop_toBottomOf="@+id/tvTheRightAddress"
@@ -68,7 +70,7 @@
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/buttonLoginAccountOptions"
-            android:layout_width="@dimen/mediumButtonWidth"
+            android:layout_width="@dimen/largeButtonWidth"
             android:layout_height="@dimen/smallButtonHeight"
             style="@style/whiteButtonStyle"
             app:layout_constraintBottom_toBottomOf="parent"
