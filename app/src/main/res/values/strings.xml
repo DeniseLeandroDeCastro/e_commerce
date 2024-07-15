@@ -9,13 +9,13 @@
     <string name="text_btn_login">Login</string>
     <string name="tv_login_account">Faça login na sua conta</string>
     <string name="tv_last_name">Último nome</string>
-    <string name="tv_ainda_nao_tem_conta">Ainda não tem uma conta? Cadastre-se.</string>
+    <string name="tv_dont_have_account">Ainda não tem uma conta? Cadastre-se.</string>
     <string name="tv_seu_email">Seu email</string>
     <string name="edit_text_first_name">Primeiro nome</string>
     <string name="edit_text_last_name">Último nome</string>
-    <string name="edit_text_email">Seu email</string>
-    <string name="edit_text_password">Sua senha</string>
-    <string name="text_forget_password">Esqueceu sua senha?</string>
+    <string name="edit_email">E-mail</string>
+    <string name="edit_password">Senha</string>
+    <string name="tv_forgot_password">Esqueceu sua senha?</string>
     <string name="text_create_account">Crie sua conta</string>
     <string name="tv_first_name">Primeiro nome</string>
     <string name="tv_password">Sua senha</string>

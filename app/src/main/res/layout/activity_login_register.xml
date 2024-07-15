@@ -1,19 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".activities.LoginRegisterActivity">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/blury_background"
+        android:scaleType="centerCrop"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvAppName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/h3"
+            android:layout_marginTop="60dp"
+            app:drawableStartCompat="@drawable/ic_shopping_cart"
+            android:drawablePadding="6dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="@string/app_name"/>
+
+        <ImageView
+            android:id="@+id/logomarca"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:src="@drawable/lojinha"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvAppName" />
+
+        <TextView
+            android:id="@+id/tvTheRightAddress"
+            style="@style/h4"
+            android:layout_width="283dp"
+            android:layout_height="148dp"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:text="@string/access_wherever"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="@+id/logomarca"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="@+id/logomarca"
+            app:layout_constraintTop_toBottomOf="@+id/logomarca" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonRegisterAccountOptions"
+            android:layout_width="@dimen/mediumButtonWidth"
+            android:layout_height="@dimen/smallButtonHeight"
+            style="@style/blueButtonStyle"
+            app:layout_constraintTop_toBottomOf="@+id/tvTheRightAddress"
+            app:layout_constraintStart_toStartOf="@+id/tvTheRightAddress"
+            app:layout_constraintEnd_toEndOf="@+id/tvTheRightAddress"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:text="@string/text_btn_register"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonLoginAccountOptions"
+            android:layout_width="@dimen/mediumButtonWidth"
+            android:layout_height="@dimen/smallButtonHeight"
+            style="@style/whiteButtonStyle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/logomarca"
+            app:layout_constraintStart_toStartOf="@+id/logomarca"
+            app:layout_constraintTop_toBottomOf="@+id/buttonRegisterAccountOptions"
+            android:text="@string/text_btn_login"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

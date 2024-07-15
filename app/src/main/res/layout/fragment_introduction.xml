@@ -55,6 +55,7 @@
         app:layout_constraintTop_toBottomOf="@+id/logomarca" />
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonStartIntroduction"
         android:layout_width="@dimen/mediumButtonWidth"
         android:layout_height="@dimen/smallButtonHeight"
         style="@style/blueButtonStyle"
