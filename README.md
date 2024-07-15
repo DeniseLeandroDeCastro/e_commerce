@@ -4,7 +4,7 @@
 
 # E-commerce
 
-<img src="https://github.com/user-attachments/assets/7da6ce47-0ee0-4645-870a-a40a7ee9884e" width="200" height="200"/>
+<img src="https://github.com/user-attachments/assets/059ea769-fff6-4cb3-b559-3cbaaa7601e0" width="200" height="200"/>
 
 </div>
 
