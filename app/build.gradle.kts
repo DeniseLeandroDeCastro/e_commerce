@@ -60,6 +60,8 @@ dependencies {
 
     //Firebase
     implementation(libs.firebase.auth)
+    implementation (platform(libs.firebase.bom))
+    implementation(libs.firebase.firestore.ktx)
 
     //Dagger Hilt
     implementation(libs.dagger.hilt.android)

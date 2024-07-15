@@ -34,6 +34,7 @@ constraintlayout = "2.1.4"
 #Firebase
 googleGmsGoogleServices = "4.4.2"
 firebaseAuth = "23.0.0"
+firebaseBom = "33.1.2"
 
 #Hilt
 hiltAndroid = "2.50"
@@ -78,7 +79,6 @@ androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "j
 
 #Espresso
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
-firebase-auth = { group = "com.google.firebase", name = "firebase-auth", version.ref = "firebaseAuth" }
 
 #App Compat
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
@@ -99,6 +99,11 @@ hilt-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "hil
 #Glide
 glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
 compiler = { module = "com.github.bumptech.glide:compiler", version.ref = "glide" }
+
+#Firebase
+firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom" }
+firebase-firestore-ktx = { module = "com.google.firebase:firebase-firestore-ktx" }
+firebase-auth = { group = "com.google.firebase", name = "firebase-auth", version.ref = "firebaseAuth" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
