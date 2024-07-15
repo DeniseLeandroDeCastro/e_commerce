@@ -1,4 +1,4 @@
-package com.denise.castro.e_commerce.fragments
+package com.denise.castro.e_commerce.fragments.loginregister
 
 import android.annotation.SuppressLint
 import android.os.Bundle
@@ -9,12 +9,15 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
+import androidx.navigation.fragment.findNavController
+import com.denise.castro.e_commerce.R
 import com.denise.castro.e_commerce.data.User
 import com.denise.castro.e_commerce.databinding.FragmentRegisterBinding
 import com.denise.castro.e_commerce.util.RegisterValidation
 import com.denise.castro.e_commerce.util.Resource
 import com.denise.castro.e_commerce.viewmodel.RegisterViewModel
 import com.google.android.material.internal.ViewUtils.hideKeyboard
+import com.google.android.material.snackbar.Snackbar
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -38,6 +41,10 @@ class RegisterFragment: Fragment() {
     @SuppressLint("RestrictedApi")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        binding.tvDoYouHaveAccountRegister.setOnClickListener {
+            findNavController().navigate(R.id.action_registerFragment_to_loginFragment)
+        }
 
         binding.apply {
             editFirstNameRegister.setOnFocusChangeListener { _, focused ->
@@ -74,16 +81,13 @@ class RegisterFragment: Fragment() {
                         binding.buttonRegisterRegister.visibility = View.INVISIBLE
                     }
                     is Resource.Success -> {
-                        Log.d("RegisterFragment", it.data.toString())
-                        binding.lottieAnimation.pauseAnimation()
+                        binding.lottieAnimation.cancelAnimation()
                         binding.lottieAnimation.visibility = View.GONE
                         binding.buttonRegisterRegister.visibility = View.VISIBLE
                     }
                     is Resource.Error -> {
-                        Log.e("RegisterFragment", it.message.toString())
-                        binding.lottieAnimation.pauseAnimation()
-                        binding.lottieAnimation.visibility = View.GONE
-                        binding.buttonRegisterRegister.visibility = View.VISIBLE
+                        binding.lottieAnimation.cancelAnimation()
+                        Snackbar.make(requireView(), it.message.toString(), Snackbar.LENGTH_LONG).show()
                     }
                     else -> Unit
                 }

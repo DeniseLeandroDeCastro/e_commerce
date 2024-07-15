@@ -72,7 +72,7 @@
                 app:layout_constraintGuide_percent="0.09" />
 
             <TextView
-                android:id="@+id/tvDoTouHaveAccountRegister"
+                android:id="@+id/tvDoYouHaveAccountRegister"
                 android:textSize="18sp"
                 android:layout_width="330dp"
                 android:layout_height="31dp"
@@ -89,7 +89,7 @@
                 android:background="@drawable/edittext_border_background"
                 app:layout_constraintStart_toStartOf="@+id/guidelineLoginLeft"
                 app:layout_constraintEnd_toEndOf="@+id/guidelineLoginRight"
-                app:layout_constraintTop_toBottomOf="@+id/tvDoTouHaveAccountRegister"
+                app:layout_constraintTop_toBottomOf="@+id/tvDoYouHaveAccountRegister"
                 style="@style/editText"
                 android:hint="@string/edit_first_name"
                 android:inputType="textPersonName"
@@ -135,15 +135,15 @@
 
             <com.airbnb.lottie.LottieAnimationView
                 android:id="@+id/lottieAnimation"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:lottie_rawRes="@raw/loading"
-                app:lottie_autoPlay="false"
-                app:lottie_loop="false"
+                android:layout_width="302dp"
+                android:layout_height="284dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/guidelineLoginRight"
                 app:layout_constraintStart_toStartOf="@+id/guidelineLoginLeft"
-                app:layout_constraintTop_toBottomOf="@+id/editPasswordRegister" />
+                app:layout_constraintTop_toBottomOf="@+id/editPasswordRegister"
+                app:lottie_autoPlay="false"
+                app:lottie_loop="false"
+                app:lottie_rawRes="@raw/loading_button" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/buttonRegisterRegister"
