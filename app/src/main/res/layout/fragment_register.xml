@@ -139,7 +139,7 @@
                 android:layout_height="wrap_content"
                 app:lottie_rawRes="@raw/loading"
                 app:lottie_autoPlay="false"
-                app:lottie_loop="true"
+                app:lottie_loop="false"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/guidelineLoginRight"
                 app:layout_constraintStart_toStartOf="@+id/guidelineLoginLeft"

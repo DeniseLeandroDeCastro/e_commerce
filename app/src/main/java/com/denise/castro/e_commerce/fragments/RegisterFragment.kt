@@ -76,13 +76,13 @@ class RegisterFragment: Fragment() {
                     is Resource.Success -> {
                         Log.d("RegisterFragment", it.data.toString())
                         binding.lottieAnimation.pauseAnimation()
-                        binding.lottieAnimation.visibility = View.INVISIBLE
+                        binding.lottieAnimation.visibility = View.GONE
                         binding.buttonRegisterRegister.visibility = View.VISIBLE
                     }
                     is Resource.Error -> {
                         Log.e("RegisterFragment", it.message.toString())
                         binding.lottieAnimation.pauseAnimation()
-                        binding.lottieAnimation.visibility = View.INVISIBLE
+                        binding.lottieAnimation.visibility = View.GONE
                         binding.buttonRegisterRegister.visibility = View.VISIBLE
                     }
                     else -> Unit
