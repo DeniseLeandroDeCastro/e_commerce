@@ -41,7 +41,7 @@
         app:layout_constraintVertical_bias="0.7" />
 
     <TextView
-        android:id="@+id/tvTheRightAddress"
+        android:id="@+id/tvRegisterRegister"
         style="@style/h4"
         android:layout_width="283dp"
         android:layout_height="148dp"
@@ -61,10 +61,10 @@
         android:layout_height="@dimen/smallButtonHeight"
         android:text="@string/text_btn_start"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/tvTheRightAddress"
+        app:layout_constraintEnd_toEndOf="@+id/tvRegisterRegister"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/tvTheRightAddress"
-        app:layout_constraintTop_toBottomOf="@+id/tvTheRightAddress"
+        app:layout_constraintStart_toStartOf="@+id/tvRegisterRegister"
+        app:layout_constraintTop_toBottomOf="@+id/tvRegisterRegister"
         app:layout_constraintVertical_bias="0.505" />
 
     <ImageView

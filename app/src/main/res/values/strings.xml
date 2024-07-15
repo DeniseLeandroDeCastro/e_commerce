@@ -16,6 +16,7 @@
     <string name="edit_first_name">Primeiro nome</string>
     <string name="edit_last_name">Último nome</string>
     <string name="text_btn_register">Cadastrar</string>
+    <string name="tv_register">Faça seu cadastro</string>
 
     <!--Login-->
     <string name="edit_password">Senha</string>

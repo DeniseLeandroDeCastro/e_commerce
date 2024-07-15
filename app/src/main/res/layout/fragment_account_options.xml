@@ -42,7 +42,7 @@
             app:layout_constraintTop_toBottomOf="@+id/tvAppName" />
 
         <TextView
-            android:id="@+id/tvTheRightAddress"
+            android:id="@+id/tvRegisterRegister"
             android:textSize="22sp"
             android:textStyle="bold"
             android:fontFamily="@font/poppins_thin"
@@ -62,9 +62,9 @@
             android:layout_width="@dimen/largeButtonWidth"
             android:layout_height="@dimen/smallButtonHeight"
             style="@style/blueButtonStyle"
-            app:layout_constraintTop_toBottomOf="@+id/tvTheRightAddress"
-            app:layout_constraintStart_toStartOf="@+id/tvTheRightAddress"
-            app:layout_constraintEnd_toEndOf="@+id/tvTheRightAddress"
+            app:layout_constraintTop_toBottomOf="@+id/tvRegisterRegister"
+            app:layout_constraintStart_toStartOf="@+id/tvRegisterRegister"
+            app:layout_constraintEnd_toEndOf="@+id/tvRegisterRegister"
             app:layout_constraintBottom_toBottomOf="parent"
             android:text="@string/text_btn_register"/>
 
