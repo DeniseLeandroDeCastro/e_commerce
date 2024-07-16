@@ -143,7 +143,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/editPasswordRegister"
                 app:lottie_autoPlay="false"
                 app:lottie_loop="false"
-                app:lottie_rawRes="@raw/loading_button" />
+                app:lottie_rawRes="@raw/loader" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/buttonRegisterRegister"

@@ -1,4 +1,4 @@
-package com.denise.castro.e_commerce.fragments
+package com.denise.castro.e_commerce.fragments.accountoptions
 
 import android.os.Bundle
 import android.view.LayoutInflater

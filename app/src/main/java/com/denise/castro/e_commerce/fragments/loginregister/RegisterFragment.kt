@@ -82,11 +82,9 @@ class RegisterFragment: Fragment() {
                     }
                     is Resource.Success -> {
                         binding.lottieAnimation.cancelAnimation()
-                        binding.lottieAnimation.visibility = View.GONE
                         binding.buttonRegisterRegister.visibility = View.VISIBLE
                     }
                     is Resource.Error -> {
-                        binding.lottieAnimation.cancelAnimation()
                         Snackbar.make(requireView(), it.message.toString(), Snackbar.LENGTH_LONG).show()
                     }
                     else -> Unit

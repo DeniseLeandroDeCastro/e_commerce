@@ -25,4 +25,8 @@
     <string name="tv_forgot_password">Esqueceu sua senha?</string>
     <string name="tv_login_account">Faça login na sua conta</string>
     <string name="text_btn_login">Login</string>
+    <string name="tv_reset_password">Recuperar Senha</string>
+    <string name="tv_send_link_reset_password">Nós enviaremos o link para redefinição da sua senha para o e-mail informado.</string>
+    <string name="buttonCancelResetPasswordDialog">Cancelar</string>
+    <string name="buttonSendResetPasswordDialog">Enviar</string>
 </resources>

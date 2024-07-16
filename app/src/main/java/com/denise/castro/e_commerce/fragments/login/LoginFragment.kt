@@ -1,4 +1,4 @@
-package com.denise.castro.e_commerce.fragments
+package com.denise.castro.e_commerce.fragments.login
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -9,17 +9,18 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
-import androidx.navigation.fragment.NavHostFragment.Companion.findNavController
 import androidx.navigation.fragment.findNavController
 import com.denise.castro.e_commerce.R
 import com.denise.castro.e_commerce.activities.ShoppingActivity
 import com.denise.castro.e_commerce.databinding.FragmentLoginBinding
+import com.denise.castro.e_commerce.dialog.setupBottomSheetDialog
 import com.denise.castro.e_commerce.util.Resource
 import com.denise.castro.e_commerce.viewmodel.LoginViewModel
 import com.google.android.material.internal.ViewUtils.hideKeyboard
 import com.google.android.material.snackbar.Snackbar
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
+
 
 @AndroidEntryPoint
 class LoginFragment: Fragment(R.layout.fragment_login) {
@@ -36,7 +37,7 @@ class LoginFragment: Fragment(R.layout.fragment_login) {
         return binding.root
     }
 
-    @SuppressLint("RestrictedApi")
+    @SuppressLint("RestrictedApi", "ResourceAsColor")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
@@ -61,6 +62,32 @@ class LoginFragment: Fragment(R.layout.fragment_login) {
             }
         }
 
+        binding.tvForgotPasswordLogin.setOnClickListener {
+            setupBottomSheetDialog {email ->
+                viewModel.resetPassword(email)
+            }
+        }
+
+        lifecycleScope.launch {
+            viewModel.resetPassword.collect {
+                when(it) {
+                    is Resource.Loading -> {}
+
+                    is Resource.Success -> {
+                        Snackbar.make(
+                            requireView(),
+                            "O link para redefinção de senha foi enviado para o email informado.",
+                            Snackbar.LENGTH_LONG).show()
+                    }
+
+                    is Resource.Error -> {
+                        Snackbar.make(requireView(), "Error: ${it.message}", Snackbar.LENGTH_LONG).show()
+                    }
+                    else -> Unit
+                }
+            }
+        }
+
         lifecycleScope.launch {
             viewModel.login.collect {
                 when(it) {
@@ -71,7 +98,6 @@ class LoginFragment: Fragment(R.layout.fragment_login) {
                     }
 
                     is Resource.Success -> {
-                        binding.lottieAnimation.cancelAnimation()
                         Intent(requireActivity(), ShoppingActivity::class.java).also { intent ->
                             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK)
                             startActivity(intent)
@@ -80,7 +106,6 @@ class LoginFragment: Fragment(R.layout.fragment_login) {
                     }
 
                     is Resource.Error -> {
-                        binding.lottieAnimation.cancelAnimation()
                         Snackbar.make(requireView(), "Usuário / Senha incorretos!", Snackbar.LENGTH_LONG).show()
                     }
                     else -> Unit
