@@ -11,6 +11,5 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
     </style>
-
     <style name="Theme.E_Commerce" parent="Base.Theme.E_Commerce" />
 </resources>
