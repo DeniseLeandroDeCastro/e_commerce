@@ -81,6 +81,7 @@
         app:tabRippleColor="@color/white"
         app:tabSelectedTextColor="@color/black"
         app:tabMode="scrollable"
+        app:tabIndicator="@null"
         app:tabTextAppearance="@style/tabLayout_text"
         app:layout_constraintTop_toBottomOf="@id/homeHeader"
         app:layout_constraintStart_toStartOf="parent"
