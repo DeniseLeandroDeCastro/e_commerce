@@ -76,12 +76,14 @@ São vários os benefícios do Kotlin, alguns estão listados aqui:
 
 ### MVVM:
 <p>
-  
+  <b>Model View View Model</b>: é uma arquitetura onde, na prática, a camada Model não se comunica com a View e nem a View se comunica com a Model, mas, a View conhece a ViewModel e se comunica com ela através do binding. A camada ViewModel é importante no fluxo, pois disponibiliza à View, uma lógica de apresentação e coordena as iterações da View com a Model, além de poder implementar a lógica de validação, garantindo a consistência dos dados.
+  <a href="https://coodesh.com/blog/dicionario/o-que-e-arquitetura-mvvm/">O que é arquitetura MVVM?</a>
 </p>
 
 ### Coroutines and Flows:
 <p>
-  
+  Em coroutines, um fluxo é um tipo que pode emitir múltiplos valores sequencialmente, ao contrário de <b>suspend function</b>, que retorna apenas um único valor, ex.: um fluxo pode ser usado para receber atualizações em tempo real de um banco de dados.
+  <a href="https://developer.android.com/kotlin/flow">Fluxos de Kotlin no Android</a>
 </p>
 
 
