@@ -12,10 +12,14 @@
 
 ### Tecnologias - recursos utilizados nesse aplicativo:
 <ul>
-  <li>Kotlin,</li>
-  <li>Firebase: Firestore / Firebase Auth / Firebase Storage / Firebase Cloud Messaging;</li>
-  <li>MVVM</li>
-  <li>Coroutines and flows.</li>
+  <li><b>Kotlin</b>;</li>
+  <li><b>Navigation Component:</b> Uma activity contém vários fragments em vez de criar várias activities;</li>
+  <li><b>Firebase Firestore:</b> Banco de dados para o sistema  Firebase Storage / Firebase Cloud Messaging;</li>
+  <li><b>Firebase Auth:</b> Gerenciamento de contas / Login e registros;</li>
+  <li><b>MVVM & LiveData:</b> Separe o código lógico das visualizações e salve o estado, caso a configuração da tela seja alterada;</li>
+  <li><b>Coroutines:</b> faça algum código em segundo plano;</li>
+  <li><b>View Binding:</b> Em vez de inflar as visualizações manualmente, a vinculação de visualizações cuidará disso;</li>
+  <li><b>Glide:</b> Capture imagens e carregue-as no imageView.</li>
 </ul>
 
 ## Benefícios do Kotlin:
