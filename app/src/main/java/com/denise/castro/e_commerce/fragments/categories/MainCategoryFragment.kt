@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.widget.NestedScrollView
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
@@ -86,19 +87,26 @@ class MainCategoryFragment: Fragment(R.layout.fragment_main_category) {
             viewModel.bestProducts.collectLatest {
                 when(it) {
                     is Resource.Loading -> {
-                        showLoading()
+                        binding.bestProductsProgressBar.visibility = View.VISIBLE
                     }
                     is Resource.Success -> {
                         bestProductsAdapter.differ.submitList(it.data)
-                        hideLoading()
+                        binding.bestProductsProgressBar.visibility = View.GONE
                     }
                     is Resource.Error -> {
                         Snackbar.make(requireView(), it.message.toString(), Snackbar.LENGTH_LONG).show()
+                        binding.bestProductsProgressBar.visibility = View.GONE
                     }
                     else -> Unit
                 }
             }
         }
+
+        binding.nestedScroolMainCategory.setOnScrollChangeListener(NestedScrollView.OnScrollChangeListener { v, _, scrollY, _, _ ->
+            if (v.getChildAt(0).bottom <= v.height + scrollY) {
+                viewModel.fetchBestProducts()
+            }
+        })
     }
     private fun setupSpecialProductsRv() {
         specialProductsAdapter = SpecialProductsAdapter()
