@@ -53,6 +53,9 @@ lottie = "5.2.0"
 
 #Navigation Fragment
 navigationFragmentKtx = "2.7.7"
+firebaseCrashlytics = "19.0.3"
+googleFirebaseCrashlytics = "3.0.2"
+roomCommon = "2.6.1"
 
 [libraries]
 #Core KTX
@@ -104,6 +107,8 @@ compiler = { module = "com.github.bumptech.glide:compiler", version.ref = "glide
 firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom" }
 firebase-firestore-ktx = { module = "com.google.firebase:firebase-firestore-ktx" }
 firebase-auth = { group = "com.google.firebase", name = "firebase-auth", version.ref = "firebaseAuth" }
+firebase-crashlytics = { group = "com.google.firebase", name = "firebase-crashlytics", version.ref = "firebaseCrashlytics" }
+androidx-room-common = { group = "androidx.room", name = "room-common", version.ref = "roomCommon" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
@@ -112,4 +117,5 @@ google-gms-google-services = { id = "com.google.gms.google-services", version.re
 dagger-hilt-android = { id = "com.google.dagger.hilt.android",  version.ref = "hiltAndroid"}
 kotlin-parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize",  version.ref = "kotlinPlugin"}
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp"}
+google-firebase-crashlytics = { id = "com.google.firebase.crashlytics", version.ref = "googleFirebaseCrashlytics" }
 

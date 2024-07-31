@@ -34,4 +34,8 @@
     <string name="menu_bottom_navigation_cart">Compras</string>
     <string name="menu_bottom_navigation_profile">Perfil</string>
     <string name="tvSearch">Buscar...</string>
+    <string name="tv_best_deals">Melhores Negócios</string>
+    <string name="tv_best_products">Melhores Produtos</string>
+    <string name="scotch_premium">Scotch Premium</string>
+    <string name="see_product">ver produto</string>
 </resources>

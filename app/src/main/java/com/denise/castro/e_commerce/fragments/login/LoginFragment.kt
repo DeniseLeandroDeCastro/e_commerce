@@ -72,14 +72,12 @@ class LoginFragment: Fragment(R.layout.fragment_login) {
             viewModel.resetPassword.collect {
                 when(it) {
                     is Resource.Loading -> {}
-
                     is Resource.Success -> {
                         Snackbar.make(
                             requireView(),
                             "O link para redefinção de senha foi enviado para o email informado.",
                             Snackbar.LENGTH_LONG).show()
                     }
-
                     is Resource.Error -> {
                         Snackbar.make(requireView(), "Error: ${it.message}", Snackbar.LENGTH_LONG).show()
                     }
@@ -98,6 +96,7 @@ class LoginFragment: Fragment(R.layout.fragment_login) {
                     }
 
                     is Resource.Success -> {
+                        binding.lottieAnimation.cancelAnimation()
                         Intent(requireActivity(), ShoppingActivity::class.java).also { intent ->
                             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK)
                             startActivity(intent)

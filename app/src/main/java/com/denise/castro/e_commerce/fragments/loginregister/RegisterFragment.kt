@@ -16,6 +16,7 @@ import com.denise.castro.e_commerce.databinding.FragmentRegisterBinding
 import com.denise.castro.e_commerce.util.RegisterValidation
 import com.denise.castro.e_commerce.util.Resource
 import com.denise.castro.e_commerce.viewmodel.RegisterViewModel
+import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.internal.ViewUtils.hideKeyboard
 import com.google.android.material.snackbar.Snackbar
 import dagger.hilt.android.AndroidEntryPoint

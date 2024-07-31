@@ -9,12 +9,11 @@ import com.denise.castro.e_commerce.R
 import com.denise.castro.e_commerce.adapters.HomeViewPagerAdapter
 import com.denise.castro.e_commerce.databinding.FragmentHomeBinding
 import com.denise.castro.e_commerce.fragments.categories.AccessoryFragment
-import com.denise.castro.e_commerce.fragments.categories.ChairFragment
-import com.denise.castro.e_commerce.fragments.categories.CuppboardFragment
+import com.denise.castro.e_commerce.fragments.categories.CupboardFragment
 import com.denise.castro.e_commerce.fragments.categories.FurnitureFragment
-import com.denise.castro.e_commerce.fragments.categories.MainCategoryFragment
 import com.denise.castro.e_commerce.fragments.categories.TableFragment
-import com.google.android.material.tabs.TabLayout
+import com.denise.castro.e_commerce.fragments.categories.MainCategoryFragment
+import com.denise.castro.e_commerce.fragments.categories.ChairFragment
 import com.google.android.material.tabs.TabLayoutMediator
 
 class HomeFragment: Fragment(R.layout.fragment_home) {
@@ -35,12 +34,14 @@ class HomeFragment: Fragment(R.layout.fragment_home) {
 
         val categoriesFragments = arrayListOf<Fragment>(
             MainCategoryFragment(),
+            CupboardFragment(),
+            FurnitureFragment(),
             ChairFragment(),
-            CuppboardFragment(),
-            TableFragment(),
             AccessoryFragment(),
-            FurnitureFragment()
+            TableFragment()
         )
+
+        binding.viewPagerHome.isUserInputEnabled = false
 
         val viewPager2Adapter = HomeViewPagerAdapter(categoriesFragments, childFragmentManager, lifecycle)
         binding.viewPagerHome.adapter = viewPager2Adapter

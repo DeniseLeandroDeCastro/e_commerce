@@ -7,7 +7,9 @@ import com.denise.castro.e_commerce.R
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.bottomsheet.BottomSheetDialog
 
-fun Fragment.setupBottomSheetDialog(onSendClick: (String) -> Unit) {
+fun Fragment.setupBottomSheetDialog(
+    onSendClick: (String) -> Unit
+) {
 
     val dialog = BottomSheetDialog(requireContext(), R.style.DialogStyle)
     val view = layoutInflater.inflate(R.layout.reset_password_dialog, null)

@@ -5,6 +5,7 @@ plugins {
     alias(libs.plugins.ksp)
     alias(libs.plugins.kotlin.parcelize)
     alias(libs.plugins.dagger.hilt.android)
+    alias(libs.plugins.google.firebase.crashlytics)
 }
 
 android {
@@ -65,6 +66,8 @@ dependencies {
 
     //Dagger Hilt
     implementation(libs.dagger.hilt.android)
+    implementation(libs.firebase.crashlytics)
+    implementation(libs.androidx.room.common)
     ksp(libs.hilt.compiler)
 
     //Glide
