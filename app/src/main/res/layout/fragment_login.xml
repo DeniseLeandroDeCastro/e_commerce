@@ -6,13 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/blury_background"
-        android:scaleType="centerCrop"/>
-
-    <ScrollView
+    <androidx.core.widget.NestedScrollView
         android:id="@+id/scroolLogin"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -25,7 +19,8 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="@drawable/blury_background">
 
             <TextView
                 android:id="@+id/tvAppName"
@@ -42,13 +37,14 @@
 
             <ImageView
                 android:id="@+id/logomarca"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
                 android:layout_marginTop="4dp"
                 android:gravity="center"
                 android:src="@drawable/lojinha"
+                app:layout_constraintEnd_toStartOf="@+id/guidelineLoginRight"
                 app:layout_constraintStart_toStartOf="@+id/guidelineLoginLeft"
-                app:layout_constraintTop_toBottomOf="@+id/tvAppName" />
+                app:layout_constraintTop_toBottomOf="@+id/tvRegisterRegister" />
 
             <TextView
                 android:id="@+id/tvRegisterRegister"
@@ -59,10 +55,10 @@
                 android:gravity="center"
                 android:text="@string/tv_login_account"
                 android:textAlignment="center"
-                app:layout_constraintBottom_toBottomOf="@+id/logomarca"
+                app:layout_constraintTop_toBottomOf="@+id/tvAppName"
                 app:layout_constraintEnd_toEndOf="@+id/guidelineLoginRight"
-                app:layout_constraintStart_toEndOf="@+id/logomarca"
-                app:layout_constraintTop_toTopOf="@+id/logomarca" />
+                app:layout_constraintStart_toEndOf="@+id/guidelineLoginLeft"
+                app:layout_constraintBottom_toTopOf="@+id/logomarca"/>
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guidelineLoginLeft"
@@ -124,8 +120,9 @@
             <LinearLayout
                 android:id="@+id/linearLayoutLogin"
                 android:layout_width="339dp"
-                android:layout_height="48dp"
+                android:layout_height="100dp"
                 android:orientation="horizontal"
+                android:gravity="center"
                 android:layout_marginTop="30dp"
                 app:layout_constraintEnd_toEndOf="@+id/guidelineLoginRight"
                 app:layout_constraintStart_toStartOf="@+id/guidelineLoginLeft"
@@ -153,28 +150,19 @@
                     app:srcCompat="@drawable/antigo_twitter" />
             </LinearLayout>
 
-            <com.airbnb.lottie.LottieAnimationView
-                android:id="@+id/lottieAnimation"
-                android:layout_width="302dp"
-                android:layout_height="250dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@+id/guidelineLoginRight"
-                app:layout_constraintStart_toStartOf="@+id/guidelineLoginLeft"
-                app:layout_constraintTop_toBottomOf="@+id/linearLayoutLogin"
-                app:lottie_autoPlay="false"
-                app:lottie_loop="true"
-                app:lottie_rawRes="@raw/loader" />
-
-            <androidx.appcompat.widget.AppCompatButton
+            <com.denise.castro.e_commerce.util.customview.ProgressButton
                 android:id="@+id/buttonLoginLogin"
                 android:layout_width="@dimen/largeButtonWidth"
                 android:layout_height="@dimen/smallButtonHeight"
                 style="@style/blueButtonStyle"
+                android:layout_marginTop="100dp"
+                android:layout_marginBottom="100dp"
                 app:layout_constraintTop_toBottomOf="@+id/linearLayoutLogin"
                 app:layout_constraintStart_toStartOf="@+id/guidelineLoginLeft"
                 app:layout_constraintEnd_toEndOf="@+id/guidelineLoginRight"
                 app:layout_constraintBottom_toBottomOf="parent"
-                android:text="@string/text_btn_login"/>
+                app:progress_button_title="@string/text_btn_login"
+                app:progress_button_loading_title="@string/text_btn_loading_login"/>
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guidelineLoginRight"
@@ -183,5 +171,5 @@
                 android:orientation="vertical"
                 app:layout_constraintGuide_percent="0.91" />
         </androidx.constraintlayout.widget.ConstraintLayout>
-    </ScrollView>
+    </androidx.core.widget.NestedScrollView>
 </FrameLayout>

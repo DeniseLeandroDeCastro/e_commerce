@@ -61,13 +61,14 @@
             android:id="@+id/buttonRegisterAccountOptions"
             android:layout_width="@dimen/largeButtonWidth"
             android:layout_height="@dimen/smallButtonHeight"
-            style="@style/blueButtonStyle"
+            style="@style/whiteButtonStyle"
             app:layout_constraintTop_toBottomOf="@+id/tvRegisterRegister"
             app:layout_constraintStart_toStartOf="@+id/tvRegisterRegister"
             app:layout_constraintEnd_toEndOf="@+id/tvRegisterRegister"
             app:layout_constraintBottom_toBottomOf="parent"
             android:text="@string/text_btn_register"/>
 
+        <!--
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/buttonLoginAccountOptions"
             android:layout_width="@dimen/largeButtonWidth"
@@ -78,5 +79,19 @@
             app:layout_constraintStart_toStartOf="@+id/logomarca"
             app:layout_constraintTop_toBottomOf="@+id/buttonRegisterAccountOptions"
             android:text="@string/text_btn_login"/>
+        -->
+
+        <com.denise.castro.e_commerce.util.customview.ProgressButton
+            android:id="@+id/buttonLoginAccountOptions"
+            android:layout_width="@dimen/largeButtonWidth"
+            android:layout_height="@dimen/smallButtonHeight"
+            style="@style/whiteButtonStyle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/logomarca"
+            app:layout_constraintStart_toStartOf="@+id/logomarca"
+            app:layout_constraintTop_toBottomOf="@+id/buttonRegisterAccountOptions"
+            app:progress_button_title="@string/text_btn_login"
+            app:progress_button_loading_title="@string/text_btn_loading_login" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

@@ -42,27 +42,27 @@
 
             <ImageView
                 android:id="@+id/logomarca"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
                 android:layout_marginTop="4dp"
                 android:gravity="center"
                 android:src="@drawable/lojinha"
+                app:layout_constraintEnd_toStartOf="@+id/guidelineLoginRight"
                 app:layout_constraintStart_toStartOf="@+id/guidelineLoginLeft"
-                app:layout_constraintTop_toBottomOf="@+id/tvAppName" />
+                app:layout_constraintTop_toBottomOf="@+id/tvRegisterRegister" />
 
             <TextView
                 android:id="@+id/tvRegisterRegister"
                 android:layout_width="177dp"
                 android:layout_height="119dp"
-                android:textStyle="bold"
-                android:textSize="26sp"
                 android:gravity="center"
                 android:text="@string/tv_register"
                 android:textAlignment="center"
-                app:layout_constraintBottom_toBottomOf="@+id/logomarca"
+                android:textSize="26sp"
+                android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="@+id/guidelineLoginRight"
-                app:layout_constraintStart_toEndOf="@+id/logomarca"
-                app:layout_constraintTop_toTopOf="@+id/logomarca" />
+                app:layout_constraintStart_toStartOf="@+id/guidelineLoginLeft"
+                app:layout_constraintTop_toBottomOf="@+id/tvAppName" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guidelineLoginLeft"
@@ -106,7 +106,7 @@
                 style="@style/editText"
                 android:hint="@string/edit_last_name"
                 android:inputType="textPersonName"
-                android:layout_marginTop="15dp"/>
+                android:layout_marginTop="20dp"/>
 
             <EditText
                 android:id="@+id/editEmailRegister"
@@ -119,7 +119,8 @@
                 style="@style/editText"
                 android:hint="@string/edit_email"
                 android:inputType="textEmailAddress"
-                android:layout_marginTop="15dp"/>
+                android:layout_marginTop="20dp"/>
+
             <EditText
                 android:id="@+id/editPasswordRegister"
                 android:layout_width="0dp"
@@ -131,26 +132,18 @@
                 style="@style/editText"
                 android:hint="@string/edit_password"
                 android:inputType="textPassword"
-                android:layout_marginTop="15dp"/>
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"/>
 
-            <com.airbnb.lottie.LottieAnimationView
-                android:id="@+id/lottieAnimation"
-                android:layout_width="302dp"
-                android:layout_height="284dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@+id/guidelineLoginRight"
-                app:layout_constraintStart_toStartOf="@+id/guidelineLoginLeft"
-                app:layout_constraintTop_toBottomOf="@+id/editPasswordRegister"
-                app:lottie_autoPlay="false"
-                app:lottie_loop="true"
-                app:lottie_rawRes="@raw/loader" />
-
-            <androidx.appcompat.widget.AppCompatButton
+            <com.denise.castro.e_commerce.util.customview.ProgressButton
                 android:id="@+id/buttonRegisterRegister"
                 style="@style/blueButtonStyle"
                 android:layout_width="@dimen/largeButtonWidth"
                 android:layout_height="@dimen/smallButtonHeight"
-                android:text="@string/text_btn_register"
+                android:layout_marginTop="150dp"
+                android:layout_marginBottom="150dp"
+                app:progress_button_title="@string/text_btn_register"
+                app:progress_button_loading_title="@string/text_btn_loading_register"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/guidelineLoginRight"
                 app:layout_constraintStart_toStartOf="@+id/guidelineLoginLeft"

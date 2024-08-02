@@ -16,6 +16,7 @@
     <string name="edit_first_name">Primeiro nome</string>
     <string name="edit_last_name">Último nome</string>
     <string name="text_btn_register">Cadastrar</string>
+    <string name="text_btn_loading_register">Aguarde...</string>
     <string name="tv_register">Faça seu cadastro</string>
 
     <!--Login-->
@@ -25,6 +26,7 @@
     <string name="tv_forgot_password">Esqueceu sua senha?</string>
     <string name="tv_login_account">Faça login na sua conta</string>
     <string name="text_btn_login">Login</string>
+    <string name="text_btn_loading_login">Aguarde...</string>
     <string name="tv_reset_password">Recuperar Senha</string>
     <string name="tv_send_link_reset_password">Nós enviaremos o link para redefinição da sua senha para o e-mail informado.</string>
     <string name="buttonCancelResetPasswordDialog">Cancelar</string>

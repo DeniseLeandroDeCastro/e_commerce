@@ -8,7 +8,7 @@
 
     <fragment
         android:id="@+id/introductionFragment"
-        android:name="com.denise.castro.e_commerce.fragments.introduction.IntroductionFragment"
+        android:name="com.denise.castro.e_commerce.ui.fragments.introduction.IntroductionFragment"
         android:label="IntroductionFragment"
         tools:layout="@layout/fragment_introduction" >
         <action
@@ -18,7 +18,7 @@
     </fragment>
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.denise.castro.e_commerce.fragments.login.LoginFragment"
+        android:name="com.denise.castro.e_commerce.ui.fragments.login.LoginFragment"
         android:label="LoginFragment"
         tools:layout="@layout/fragment_login" >
         <action
@@ -28,7 +28,7 @@
     </fragment>
     <fragment
         android:id="@+id/accountOptionsFragment"
-        android:name="com.denise.castro.e_commerce.fragments.accountoptions.AccountOptionsFragment"
+        android:name="com.denise.castro.e_commerce.ui.fragments.accountoptions.AccountOptionsFragment"
         android:label="AccountOptionsFragment"
         tools:layout="@layout/fragment_account_options" >
         <action
@@ -48,7 +48,7 @@
     </fragment>
     <fragment
         android:id="@+id/registerFragment"
-        android:name="com.denise.castro.e_commerce.fragments.loginregister.RegisterFragment"
+        android:name="com.denise.castro.e_commerce.ui.fragments.loginregister.RegisterFragment"
         android:label="RegisterFragment"
         tools:layout="@layout/fragment_register" >
         <action

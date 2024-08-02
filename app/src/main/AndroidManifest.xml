@@ -20,13 +20,14 @@
         android:theme="@style/Theme.E_Commerce"
         tools:targetApi="31">
         <activity
-            android:name=".activities.ShoppingActivity"
+            android:name=".ui.activities.ShoppingActivity"
+            android:windowSoftInputMode="adjustResize|stateAlwaysVisible"
             android:exported="false" >
         </activity>
 
         <activity
-            android:name=".activities.LoginRegisterActivity"
-            android:windowSoftInputMode="stateVisible|adjustResize"
+            android:name=".ui.activities.LoginRegisterActivity"
+            android:windowSoftInputMode="adjustResize|stateAlwaysVisible"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

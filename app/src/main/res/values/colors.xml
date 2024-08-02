@@ -13,6 +13,7 @@
     <color name="g_gray700">#666666</color>
     <color name="dim_gray">#696969</color>
     <color name="g_gray500">#969899</color>
+    <color name="btn_loading_bg">#ccc</color>
 
     <!--Tons de azul-->
     <color name="g_blue">#000DAE</color>
@@ -30,4 +31,5 @@
     <color name="g_orange_yellow">#F8BA00</color>
     <color name="g_green">#11FF00</color>
     <color name="background_button">#9C27B0</color>
+    <color name="btn_loading_iv">#029E04</color>
 </resources>
