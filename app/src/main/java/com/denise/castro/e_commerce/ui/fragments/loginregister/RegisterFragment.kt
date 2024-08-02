@@ -69,6 +69,12 @@ class RegisterFragment: Fragment() {
                 )
                 val password = editPasswordRegister.text.toString()
                 viewModel.createAccountWithEmailAndPassword(user, password)
+
+                editFirstNameRegister.setText("")
+                editLastNameRegister.setText("")
+                editEmailRegister.setText("")
+                editPasswordRegister.setText("")
+                editFirstNameRegister.requestFocus()
             }
         }
         lifecycleScope.launch {
