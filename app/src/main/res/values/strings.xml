@@ -44,4 +44,8 @@
     <string name="price_product_details">R$ 600,00</string>
     <string name="product_details_color">Cor</string>
     <string name="tv_product_size">Tamanho</string>
+
+    <!--Details-->
+    <string name="text_btn_add_to_cart">Adicionar ao carrinho</string>
+    <string name="tv_size_details">P</string>
 </resources>

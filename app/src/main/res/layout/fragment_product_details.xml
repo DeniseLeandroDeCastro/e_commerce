@@ -154,7 +154,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginTop="45dp"
             android:layout_marginBottom="20dp"
-            app:progress_button_title="@string/text_btn_login"
+            app:progress_button_title="@string/text_btn_add_to_cart"
             app:progress_button_loading_title="@string/text_btn_loading_login"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>
