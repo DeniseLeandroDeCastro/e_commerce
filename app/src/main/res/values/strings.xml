@@ -40,4 +40,8 @@
     <string name="tv_best_products">Melhores Produtos</string>
     <string name="scotch_premium">Scotch Premium</string>
     <string name="see_product">ver produto</string>
+    <string name="nome_do_produto">Nome do Produto</string>
+    <string name="price_product_details">R$ 600,00</string>
+    <string name="product_details_color">Cor</string>
+    <string name="tv_product_size">Tamanho</string>
 </resources>
