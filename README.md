@@ -90,6 +90,19 @@ São vários os benefícios do Kotlin, alguns estão listados aqui:
   <a href="https://developer.android.com/kotlin/flow">Fluxos de Kotlin no Android</a>
 </p>
 
+## Algumas telas do app:
+
+<div align="center">
+
+<img src="https://github.com/user-attachments/assets/67797ffe-080f-4d04-a674-e1b5ed4e315c" width="300" height="600"/> 
+<img src="https://github.com/user-attachments/assets/4fc12214-eb5b-4651-9130-637df58a1bd6" width="300" height="600"/> 
+<img src="https://github.com/user-attachments/assets/0e942f82-e7c0-4e1b-9c31-cc7c1e250be4" width="300" height="600"/> <br/><br/>
+<img src="https://github.com/user-attachments/assets/1ba15b62-3f02-43e8-b3ef-9f448b0de294" width="300" height="600"/> 
+<img src="https://github.com/user-attachments/assets/59a77739-5bda-427b-aa4b-f683aac8569e" width="300" height="600"/> 
+<img src="https://github.com/user-attachments/assets/1810bfb8-6763-474a-b115-5d6c61e2a947" width="300" height="600"/> <br/><br/>
+
+</div>
+
 
 
 
